@@ -1,0 +1,30 @@
+body {
+     background-image: url(/img/main-menu-bg.jpg) ;
+
+}
+
+form {
+
+     margin-top: 0%;
+     margin-bottom: 0%;
+}
+
+.content {
+     border-radius: 5px 10px 15px 20px;
+     background-image: url(/img/pattern.png);
+}
+
+
+
+span {
+     color: red;
+}
+
+footer {
+     background-image: url(/img/footer_bg.jpg);
+}
+
+input[type=number]::-webkit-outer-spin-button { 
+     -webkit-user-drag: none; 
+     margin: 0; 
+   }

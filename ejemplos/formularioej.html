@@ -1,0 +1,1989 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario Actualización de datos</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body class="border bg-success p-5">
+  <main>
+
+    <form action="formularioactualizacion" id="form" class="mr-2 border bg-warning p-5 mt-5 mr-8 ml-8 ">
+
+      <div class="bd-content p-4">
+        <h2 id="actualizacion bg-info text-center p-3 mt-5 ml-4 mr-4" >Formulario Actualización de datos</h2> 
+        <div class="row bg-danger bg-info p-3 mt-2 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="tipodeidentificacion" class="form-label">
+              Tipo de identificación:
+            </label>
+
+            <select id="selecttipoide" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">CC</option>
+              <option value="2">CE</option>
+              <option value="3">NI</option>
+              <option value="4">NU</option>
+              <option value="5">OT</option>
+              <option value="6">PA</option>
+              <option value="7">RC</option>
+              <option value="3">TI</option>
+            </select>
+          </div>
+          <div class="col p-3 mt-2 ml-60 mr-2">
+            <label for="numerodeidentificacion" class="form-label">Número de identificación:
+            </label>
+            <input type="number" class="form-control" id="numerodeidentificacion"
+              placeholder="Introduce tu número de identificación" />
+          </div>
+        </div>
+
+        <div class="row bg-danger bg-info p-3 mt-2 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="primernombre" class="form-label">Primer nombre:
+            </label>
+            <input id="inprimernombre" type="text" class="form-control" placeholder="Introduce tu primer nombre"
+              aria-label="Primer nombre" />
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="segundonombre" class="form-label">Segundo nombre:
+            </label>
+            <input id="insegundonombre" type="text" class="form-control" placeholder="Introduce tu segundo nombre"
+              aria-label="Segundo nombre" />
+          </div>
+        </div>
+
+        <div class="row bg-danger bg-info p-3 mt-2 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="primerapellido" class="form-label">Primer apellido:
+            </label>
+            <input id="inprimerapellido" type="text" class="form-control" placeholder="Introduce tu primer apellido"
+              aria-label="Primer apellido" />
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="segundoapellido" class="form-label">Segundo apellido:
+            </label>
+            <input id="insegundoapellido" type="text" class="form-control" placeholder="Introduce tu segundo apellido"
+              aria-label="Segundo apellido" />
+          </div>
+        </div>
+
+        <div class="row bg-danger bg-info p-3 mt-2 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="fechadeexp" class="form-label">Fecha de expedición:
+            </label>
+            <input type="date" id="infechadeexp" class="form-control" name="trip-start" value="2021-12-31"
+              min="1940-01-01" max="2022-12-31">
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="paisdeexp" class="form-label">País de expedición:
+            </label>
+            <input type="text" id="inpaisdeexp" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="departamentodeexp" class="form-label">Departamento de expedición:
+            </label>
+            <input type="text" id="indepartamentodeexp" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="ciudaddeexp" class="form-label">Ciudad de expedición:
+            </label>
+            <input type="text" id="inciudaddeexp" class="form-control" name="trip-start">
+          </div>
+        </div>
+
+        <div class="row bg-danger bg-info p-3 mt-2 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="genero" class="form-label"> Genero:
+            </label>
+            <select id="segenero" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">Femenino</option>
+              <option value="2">Masculino</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="gruposang" class="form-label">Grupo sanguíneo:
+            </label>
+            <select id="segruposang" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">O-</option>
+              <option value="2">O+</option>
+              <option value="3">A-</option>
+              <option value="4">A+</option>
+              <option value="5">B-</option>
+              <option value="6">B+</option>
+              <option value="7">AB-</option>
+              <option value="3">AB+</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="estadocivil" class="form-label">Estado civil:
+            </label>
+            <select class="form-control" id="seestadocivil" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">Soltero</option>
+              <option value="2">Casado</option>
+              <option value="3">Separado</option>
+              <option value="4">Viudo</option>
+              <option value="5">Unión libre</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="tipovivienda" class="form-label"> Tipo de vivienda:
+            </label>
+            <select id="setipovivienda" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">Familiar</option>
+              <option value="2">Propia</option>
+              <option value="3">Amortización</option>
+              <option value="4">Arrendada</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row bg-danger bg-info p-3 mt-2 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="medtransporte" class="form-label"> Medio de transporte:
+            </label>
+            <select id="semedtransporte" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">Bus</option>
+              <option value="2">Taxi</option>
+              <option value="3">Vehículo</option>
+              <option value="4">Tren metropolitano</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="paisdenacimiento" class="form-label">País de nacimiento:
+            </label>
+            <input type="text" id="inpaisdenacimiento" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="depnacimiento" class="form-label"> Departamento de nacimiento:
+            </label>
+            <input type="text" id="indepnacimiento" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="ciudadnacimiento" class="form-label"> Ciudad de nacimiento:
+            </label>
+            <input type="text" id="inciudadnacimiento" class="form-control" name="trip-start">
+          </div>
+        </div>
+
+        <div class="row bg-danger bg-info p-3 mt-2 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="fechadenacimiento" class="form-label">Fecha de nacimiento:
+            </label>
+            <input type="date" id="infechadenacimiento" class="form-control" name="trip-start" value="2005-12-31"
+              min="1940-12-31" max="2005-12-31">
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="fechadeexp" class="form-label"> Correo personal:
+            </label>
+            <input type="email" id="inemail" class="form-control" name="trip-start">
+          </div>
+        </div>
+
+      </div>
+
+    </form>
+
+    <form action="inforesidencia" class="mr-2 border bg-warning p-5 mt-5 mr-8 ml-8 ">
+      <div class="bd-content p-4">
+        <h2 id="actualizacion"> Información de Residencia</h2>
+
+        <div class="row bg-danger bg-info p-3 mt-2 ml-60 mr-2">
+          <div class="col  bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="tipodeidentificacion" class="form-label">
+              Tipo vía :
+            </label>
+            <select id="setipovia" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">CARRERA</option>
+              <option value="2">AVENIDA CALLE</option>
+              <option value="3">ADMINISTRACIÓN</option>
+              <option value="4">ADELANTE</option>
+              <option value="5">AEROPUERTO</option>
+              <option value="6">AGENCIA</option>
+              <option value="7">AGRUPACIÓN</option>
+              <option value="8">AVENIDA CARRERA</option>
+              <option value="9">ALTILLO</option>
+              <option value="10">AL LADO</option>
+              <option value="11">ALMACEN</option>
+              <option value="12">APARTAMENTO</option>
+              <option value="13">APARTADO</option>
+              <option value="14">ATRÁS</option>
+              <option value="15">AUTOPISTA</option>
+              <option value="16">AVENIDA</option>
+              <option value="17">ANILLO VIAL</option>
+              <option value="18">BODEGA</option>
+              <option value="19">BLOQUE</option>
+              <option value="20">BOULEVARD</option>
+              <option value="21">BARRIO</option>
+              <option value="22">CORREGIMIENTO</option>
+              <option value="23">CASA</option>
+              <option value="24">CASERIO</option>
+              <option value="25">CENTRO COMERCIAL</option>
+              <option value="26">CIUDADELA</option>
+              <option value="27">CELULA</option>
+              <option value="28">CENTRO</option>
+              <option value="29">CIRCULAR</option>
+              <option value="30">CALLE</option>
+              <option value="31">CALLEJON</option>
+              <option value="32">CAMINO</option>
+              <option value="33">CONJUNTO RESIDENCIAL</option>
+              <option value="34">CONJUNTO</option>
+              <option value="35">CARRERA</option>
+              <option value="36">CARRETERA</option>
+              <option value="37">CIRCUNVALAR</option>
+              <option value="38">CONSULTORIO</option>
+              <option value="39">DIAGONAL</option>
+              <option value="40">DEPOSITO</option>
+              <option value="41">DEPARTAMENTO</option>
+              <option value="42">DEPOSITO SOTANO</option>
+              <option value="43">EDIFICIO</option>
+              <option value="44">ENTRADA</option>
+              <option value="45">ESCALERA</option>
+              <option value="46">ESQUINA</option>
+              <option value="47">ESTE</option>
+              <option value="48">ETAPA</option>
+              <option value="49">EXTERIOR</option>
+              <option value="50">FINCA</option>
+              <option value="51">GARAJE</option>
+              <option value="52">GARAJE SOTANO</option>
+              <option value="53">GLORIETA</option>
+              <option value="54">HACIENDA</option>
+              <option value="55">HANGAR</option>
+              <option value="56">INTERIOR</option>
+              <option value="57">INSPECCION DE POLICIA</option>
+              <option value="58">INSPECCION DEPARTAMENTAL</option>
+              <option value="59">INSPECCION MUNICIPAL</option>
+              <option value="60">KILOMETRO</option>
+              <option value="61">LOCAL</option>
+              <option value="62">LOCA MESSANINE</option>
+              <option value="63">LOTE</option>
+              <option value="64">MODULO</option>
+              <option value="65">NOJON</option>
+              <option value="66">MUELLE</option>
+              <option value="67">MEZZANINE</option>
+              <option value="68">MANZANA</option>
+              <option value="69">VIAS NOMBRE COMUÚN</option>
+              <option value="70">NORTE</option>
+              <option value="71">ORIENTE</option>
+              <option value="72">OCCIDENTE</option>
+              <option value="73">OESTE</option>
+              <option value="74">OFICINA</option>
+              <option value="75">PISO</option>
+              <option value="76">PARCELA</option>
+              <option value="77">PARQUE</option>
+              <option value="78">PREDIO</option>
+              <option value="79">PENTHOUSE</option>
+              <option value="80">PASAJE</option>
+              <option value="81">PLANTA</option>
+              <option value="82">PUENTE</option>
+              <option value="83">PORTERIA</option>
+              <option value="84">POSTE</option>
+              <option value="85">PARQUEADERO</option>
+              <option value="86">PARAJE</option>
+              <option value="87">PASEO</option>
+              <option value="88">PUESTO</option>
+              <option value="89">PARK WAY</option>
+              <option value="90">ROUND POINT</option>
+              <option value="91">SALON</option>
+              <option value="92">SALON COMUNAL</option>
+              <option value="93">SALIDA</option>
+              <option value="94">SECTIR</option>
+              <option value="95">SOLAR</option>
+              <option value="96">SUPER MANZANA</option>
+              <option value="97">SEMISOTANO</option>
+              <option value="98">SOTANO</option>
+              <option value="99">SUITE</option>
+              <option value="100">SUR</option>
+              <option value="101">TERMINAL</option>
+              <option value="102">TERRAPLEN</option>
+              <option value="103">TORRE</option>
+              <option value="104">TRANSVERSAL</option>
+              <option value="105">TERRAZA</option>
+              <option value="106">UNIDAD</option>
+              <option value="107">UNIDAD RESIDENCIAL</option>
+              <option value="108">URBANIZACIÓN</option>
+              <option value="109">VEREDA</option>
+              <option value="110">VARIANTE</option>
+              <option value="111">ZONA FRANCA</option>
+              <option value="112">ZONA</option>
+
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="numerovia1" class="form-label">Número :
+            </label>
+            <input type="number" id="innumerovia1" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="letravia1" class="form-label">Letra :
+            </label>
+            <input type="text" id="inletravia1" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="complemento1" class="form-label">Complemento :
+            </label>
+            <input type="text" id="incomplemento1" class="form-control" name="trip-start">
+          </div>
+        </div>
+
+        <div class="row bg-danger bg-info p-3 mt-2 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="cuadrante1" class="form-label">
+              Cuadrante:
+            </label>
+            <select id="secuadrante1" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">ESTE</option>
+              <option value="2">NORTE</option>
+              <option value="3">OESTE</option>
+              <option value="4">SUR</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="numerovia2" class="form-label">Número :
+            </label>
+            <input type="number" id="innumerovia2" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="letravia2" class="form-label">Letra :
+            </label>
+            <input type="text" id="inletravia2" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="complemento2" class="form-label">Complemento :
+            </label>
+            <input type="text" id="incomplemento2" class="form-control" name="trip-start">
+          </div>
+
+        </div>
+
+        <div class="row bg-danger bg-info p-3 mt-2 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="cuadrante3" class="form-label">
+              Cuadrante:
+            </label>
+            <select id="secuadrante3" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">ESTE</option>
+              <option value="2">NORTE</option>
+              <option value="3">OESTE</option>
+              <option value="4">SUR</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="numerovia3" class="form-label">Número :
+            </label>
+            <input type="number" id="numerovia3" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="complemento3" class="form-label">
+              Complemento :
+            </label>
+            <select class="form-control" id="secomplemento3" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">CASA</option>
+              <option value="2">FINCA</option>
+              <option value="3">APARTAMENTO</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="complemento4" class="form-label">Complemento :
+            </label>
+            <input type="text" id="incomplemento4" class="form-control" name="trip-start">
+          </div>
+        </div>
+
+        <div class="row bg-danger bg-info p-3 mt-2 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="diringresada">Dirección ingresada:</label>
+            <input class="form-control" type="text" value="Disabled readonly input" aria-label="" disabled readonly>
+          </div>
+        </div>
+
+      </div>
+    </form>
+
+    <form action="vacunación" class="mr-2 border bg-warning p-5 mt-5 mr-8 ml-8 ">
+      <div class="bd-content p-4">
+        <label for="estadovacunacion" class="form-label">
+          <h5>¿Estado actual de vacunación?</h5>
+        </label>
+        <div class="row bg-danger bg-info p-3 mt-2 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="seleccionvacunación">Por favor seleccione su estado actual en vacunación:</label>
+            <select id="sevacunacion" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">SIN VACUNAR</option>
+              <option value="2">UNA DOSIS</option>
+              <option value="3">DOS DOSIS</option>
+              <option value="4">MÁS DOSIS</option>
+              <option value="5">SIN VACUNAR</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="formFileSm" class="form-label">Anexe su carnet de vacunación:</label>
+            <input class="form-control form-control-sm" id="incarnet" type="file">
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form action="redessociales" class="mr-2 border bg-warning p-5 mt-5 mr-8 ml-8 ">
+      <div class="bd-content p-4">
+        <div class="row bg-danger bg-info p-3 mt-2 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="redessociales" class="form-label">
+              <h6> ¿Tiene redes sociales?</h6>
+            </label>
+            <select id="seredessociales" class="col-5 form" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">NO</option>
+              <option value="2">SI</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="facebook" class="form-label">Facebook
+            </label>
+            <input type="text" id="infacebook" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="twitter" class="form-label">Twitter
+            </label>
+            <input type="text" id="intwitter" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="instagram" class="form-label">Instagram
+            </label>
+            <input type="text" id="ininstagram" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-2 ml-60 mr-2">
+            <label for="linkedIn" class="form-label">LinkedIn
+            </label>
+            <input type="text" id="inlinkedIn" class="form-control" name="trip-start">
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form action="hobbies" class="mr-2 border bg-warning p-5 mt-5 mr-8 ml-8 ">
+      <div class="bd-content p-4"> 
+        <h2 id="actualizacion">Hobbies</h2>
+        <div class="row bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col form-check form-check form-check-inline ">
+            <input class="form-check-input" type="checkbox" value="" id="check1">
+            <label class="form-check-label" for="flexCheckDefault">
+              Leer
+            </label>
+          </div>
+          <div class="col form-check form-check form-check-inline ">
+            <input class="form-check-input" type="checkbox" value="" id="check2">
+            <label class="form-check-label" for="flexCheckDefault">
+              Ver la tele
+            </label>
+          </div>
+          <div class="col form-check form-check form-check-inline ">
+            <input class="form-check-input" type="checkbox" value="" id="check3">
+            <label class="form-check-label" for="flexCheckDefault">
+              Tiempo en familia
+            </label>
+          </div>
+          <div class="col form-check form-check form-check-inline ">
+            <input class="form-check-input" type="checkbox" value="" id="check4">
+            <label class="form-check-label" for="flexCheckDefault">
+              Ir al cine
+            </label>
+          </div>
+          <div class="col form-check form-check form-check-inline ">
+            <input class="form-check-input" type="checkbox" value="" id="check5">
+            <label class="form-check-label" for="flexCheckDefault">
+              Pescar
+            </label>
+          </div>
+        </div>
+
+        <div class="row bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col form-check form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="check6">
+            <label class="form-check-label" for="flexCheckDefault">
+              Tiempo en el PC
+            </label>
+          </div>
+          <div class="col form-check form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="check7">
+            <label class="form-check-label" for="flexCheckDefault">
+              La jardinería
+            </label>
+          </div>
+          <div class="col form-check form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="check8">
+            <label class="form-check-label" for="flexCheckDefault">
+              Alquilar películas
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="check9">
+            <label class="form-check-label" for="flexCheckDefault">
+              Hacer ejercicio
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="check10">
+            <label class="form-check-label" for="flexCheckDefault">
+              Escuchar música
+            </label>
+          </div>
+        </div>
+
+        <div class="row bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Jugar al golf
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Coser
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Socializarse
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Meditar
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Dormir
+            </label>
+          </div>
+        </div>
+
+        <div class="row bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Viajar
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="check9">
+            <label class="form-check-label" for="flexCheckDefault">
+              Ir de compras
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="check10">
+            <label class="form-check-label" for="flexCheckDefault">
+              Practicar deportes
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Ir de caza
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Tareas divertidas
+            </label>
+          </div>
+        </div>
+
+        <div class="row bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Ir a la iglesia
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Relajarse
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Ir a la playa
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Jugar al billar
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Artesanía
+            </label>
+          </div>
+        </div>
+
+        <div class="row bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Redes sociales
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Ver partidos
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Montar en bici
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="check9">
+            <label class="form-check-label" for="flexCheckDefault">
+              Jugar a las cartas
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="check10">
+            <label class="form-check-label" for="flexCheckDefault">
+              Excursionismo
+            </label>
+          </div>
+        </div>
+
+        <div class="row bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Montar en barco
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Arreglar coches
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Ser voluntario
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Esquiar
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Videojuegos
+            </label>
+          </div>
+        </div>
+
+        <div class="row bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Ir de camping
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Nadar
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Tener citas online
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Ir a cenar afuera
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Cocinar
+            </label>
+          </div>
+        </div>
+
+        <div class="row bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="check9">
+            <label class="form-check-label" for="flexCheckDefault">
+              Escribir
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="check9">
+            <label class="form-check-label" for="flexCheckDefault">
+              Ir en motocicleta
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="check9">
+            <label class="form-check-label" for="flexCheckDefault">
+              Cuidar animales
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="check9">
+            <label class="form-check-label" for="flexCheckDefault">
+              Jugar a los bolos
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="check9">
+            <label class="form-check-label" for="flexCheckDefault">
+              Pintar
+            </label>
+          </div>
+        </div>
+
+        <div class="row bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="check10">
+            <label class="form-check-label" for="flexCheckDefault">
+              Ir a correr
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Bailar
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Montar a caballo
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Jugar al tennis
+            </label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Ir al teatro
+            </label>
+          </div>
+        </div>
+
+        <div class="row bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="inotro">
+            <label class="form-check-label" for="flexCheckDefault">
+              Otro
+            </label>
+          </div>
+          <div class="">
+            <label for="cualhobbie" class="form-label">Cual?
+            </label>
+            <input type="text" id="incualhobbie" class="form-control" name="trip-start">
+          </div>
+        </div>
+
+      </div>
+
+    </form>
+
+    <form action="informacionlaboral" class="mr-2 border bg-warning p-5 mt-5 mr-8 ml-8 ">
+      <div class="bd-content p-4">
+        <h2 id="actualizacion">Información laboral</h2>
+
+        <div class="row bg-danger p-3 mt-1 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="compania" class="form-label">
+              Compañía
+            </label>
+            <select id="secompania" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">COMODIN S.A.S.</option>
+              <option value="2">NAFTALINA S.A.S</option>
+              <option value="3">JOHN URIBE E HIJOS S.A.</option>
+              <option value="4">DOGAMA</option>
+              <option value="5">MODYMARCA S.A.S</option>
+              <option value="6">FRUTO DE LA MODA S.A.S</option>
+              <option value="7">PUNTO ESTILO COLOMBIA S.A.S</option>
+              <option value="8">IMERCO S.A.S</option>
+              <option value="9">FIGURAS INFORMALES S.A.S FIGURIN</option>
+              <option value="10">MERCADEO Y MODA S.A.S</option>
+              <option value="11">AVALCREDITOS SAS</option>
+              <option value="12">COLCOM S.A.S.</option>
+              <option value="13">INTERCREDITO DE COLOMBIA SAS</option>
+              <option value="14">PROIN PROMOTORA INMOBILIARIA SAS</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="cargoactual" class="form-label">Cargo actual
+            </label>
+            <input type="text" id="incargoa" class="form-control" name="trip-start">
+          </div>
+        </div>
+
+        <div class="row bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="tallapantalon" class="form-label">
+              Talla pantalón
+            </label>
+            <select id="setallapantalon" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">6</option>
+              <option value="2">8</option>
+              <option value="3">10</option>
+              <option value="4">11</option>
+              <option value="5">12</option>
+              <option value="6">14</option>
+              <option value="7">16</option>
+              <option value="8">18</option>
+              <option value="9">28</option>
+              <option value="10">30</option>
+              <option value="11">32</option>
+              <option value="12">34</option>
+              <option value="13">36</option>
+              <option value="14">38</option>
+              <option value="15">40</option>
+              <option value="16">42</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="tallacamisa" class="form-label">
+              Talla camisa
+            </label>
+            <select id="setallacamisa" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="">XS</option>
+              <option value="">S</option>
+              <option value="">M</option>
+              <option value="">L</option>
+              <option value="">XL</option>
+              <option value="">XXL</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="tallazapato" class="form-label">
+              Talla zapato
+            </label>
+            <select id="setallazapato" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="">26</option>
+              <option value="">27</option>
+              <option value="">28</option>
+              <option value="">29</option>
+              <option value="">30</option>
+              <option value="">31</option>
+              <option value="">32</option>
+              <option value="">33</option>
+              <option value="">34</option>
+              <option value="">35</option>
+              <option value="">36</option>
+              <option value="">37</option>
+              <option value="">38</option>
+              <option value="">39</option>
+              <option value="">40</option>
+              <option value="">41</option>
+              <option value="">42</option>
+              <option value="">43</option>
+              <option value="">44</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form action="experencialaboralo" class="mr-2 border bg-warning p-5 mt-5 mr-8 ml-8 ">
+      <div class="bd-content p-4">
+        <h2 id="actualizacion">Experiencia laboral</h2>
+        <div class="row bg-danger p-3 mt-1 ml-60 mr-2">
+          <h6 for="compania" class="form-label">
+            Número de empresas
+          </h6>
+          <p>Si ha laborado en otra empresas, por favor ingrese un número de la lista:</p>
+          <select id="secompania" class="form-control" aria-label="Default select example">
+            <option selected>Selecciona una opción</option>
+            <option value="1">0</option>
+            <option value="2">1</option>
+            <option value="3">2</option>
+          </select>
+        </div>
+      </div>
+    </form>
+
+    <form action="experencialaboralo1" class="mr-2 border bg-warning p-5 mt-5 mr-8 ml-8 ">
+      <div class="bd-content p-4">
+        <h4 id="actualizacion">Información de la Empresa 1</h4>
+        <div class="row bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="nombreempresa" class="form-label">Nombre
+              <input type="text" id="innombreempresa" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="nombrecargo" class="form-label">Cargo
+              <input type="text" id="innombrecargo" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="fechainiciotrabajo1" class="form-label">Fecha de inicio
+            </label>
+            <input type="date" id="infechainiciotrabajo1" class="form-control" name="trip-start" value="2005-12-31"
+              min="1940-12-31" max="2022-12-31">
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="fechafintrabajo1" class="form-label">Fecha de finalización
+            </label>
+            <input type="date" id="infechafintrabajo1" class="form-control" name="trip-start" value="2005-12-31"
+              min="1940-12-31" max="2022-12-31">
+          </div>
+
+        </div>
+      </div>
+      </div>
+    </form>
+
+    <form action="experencialaboralo2" class="mr-2 border bg-warning p-5 mt-5 mr-8 ml-8 ">
+      <div class="bd-content p-4">
+        <h4 id="actualizacion">Información de la Empresa 2</h4>
+        <div class="row  bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="nombreempresa" class="form-label">Nombre
+              <input type="text" id="innombreempresa" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="nombrecargo" class="form-label">Cargo
+              <input type="text" id="innombrecargo" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="fechainiciotrabajo1" class="form-label">Fecha de inicio
+            </label>
+            <input type="date" id="infechainiciotrabajo1" class="form-control" name="trip-start" value="2005-12-31"
+              min="1940-12-31" max="2022-12-31">
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="fechafintrabajo1" class="form-label">Fecha de finalización
+            </label>
+            <input type="date" id="infechafintrabajo1" class="form-control" name="trip-start" value="2005-12-31"
+              min="1940-12-31" max="2022-12-31">
+          </div>
+
+        </div>
+
+      </div>
+      </div>
+    </form>
+
+    <form action="otrosdocumentos" class="mr-2 border bg-warning p-5 mt-5 mr-8 ml-8 ">
+      <div class="bd-content p-4">
+        <h2>Otros documentos</h2>
+        <div class="row  bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="compania" class="form-label">
+              Clase libreta militar
+            </label>
+            <select id="selibretamili" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">No aplica</option>
+              <option value="2">Primera</option>
+              <option value="3">Segunda</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="numlibretamili" class="form-label">
+              Número libreta militar
+            </label>
+            <input type="text" id="innumlibretamili" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="compania" class="form-label">
+              Distrito libreta militar
+            </label>
+            <select id="selibretamili" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="">BOGOTÁ</option>
+              <option value="">VILLAVICENCIO</option>
+              <option value="">CHINQUIQUIRÁ</option>
+              <option value="">TUNJA</option>
+              <option value="">SOGAMOSO</option>
+              <option value="">YOPAL</option>
+              <option value="">BARRANQUILLA</option>
+              <option value="">SINCELEJO</option>
+              <option value="">MONTERÍA</option>
+              <option value="">CARTAGENA</option>
+              <option value="">VALLEDUPAR</option>
+              <option value="">CALI</option>
+              <option value="">PALMIRA</option>
+              <option value="">BUGA</option>
+              <option value="">POPAYÁN</option>
+              <option value="">IPIALES</option>
+              <option value="">PEREIRA</option>
+              <option value="">PASTO</option>
+              <option value="">MEDELLÍN</option>
+              <option value="">CAREPA</option>
+              <option value="">PUERTO BERRÍO</option>
+              <option value="">QUIBDÓ</option>
+              <option value="">CARTAGO</option>
+              <option value="">MANIZALES</option>
+              <option value="">BUCARAMANGA</option>
+              <option value="">SOCORRO</option>
+              <option value="">BARRANCABERMEJA</option>
+              <option value="">CÚCUTA</option>
+              <option value="">PAMPLONA</option>
+              <option value="">OCAÑA</option>
+              <option value="">IBAGUÉ</option>
+              <option value="">ARMENIA</option>
+              <option value="">HONDA</option>
+              <option value="">GIRADOT</option>
+              <option value="">NEIVA</option>
+              <option value="">FLORENCIA</option>
+              <option value="">FACATATIVA</option>
+              <option value="">CAJICÁ</option>
+              <option value="">BARBOSA</option>
+              <option value="">ARAUCA</option>
+              <option value="">GRANADA</option>
+              <option value="">PITALITO</option>
+              <option value="">CHAPARRAL</option>
+              <option value="">BUENAVENTURA</option>
+              <option value="">SOACHA</option>
+              <option value="">CAUCASIA</option>
+              <option value="">MOCOA</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="fechadeexplibreta" class="form-label">Fecha de inicio
+            </label>
+            <input type="date" id="infechadeexplibreta" class="form-control" name="trip-start" value="2022-12-31"
+              min="1940-12-31" max="2022-12-31">
+          </div>
+        </div>
+
+        <div class="row  bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="numlicconduc" class="form-label"> 
+              Número licencia de conducción
+            </label>
+            <input type="text" id="innumlicconduc" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="licconduc" class="form-label">
+              Categoría licencia
+            </label>
+            <select id="selicconduc" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="">No aplica</option>
+              <option value="">A1</option>
+              <option value="">A2</option>
+              <option value="">B1</option>
+              <option value="">B2</option>
+              <option value="">B3</option>
+              <option value="">C1</option>
+              <option value="">C2</option>
+              <option value="">C3</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="fechadeexplicconduc" class="form-label">F. Vencimiento licencia
+            </label>
+            <input type="date" id="infechadeexplicconduc" class="form-control" name="trip-start" value="2022-12-31"
+              min="1940-12-31" max="2050-12-31">
+          </div>
+        </div>
+
+        <div class="row bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="numtarjetaprofesional" class="form-label">
+              Número tarjeta profesional
+            </label>
+            <input type="text" id="innumtarjetaprofesional" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="pasaporte" class="form-label">
+              Número pasaporte
+            </label>
+            <input type="text" id="inpasaporte" class="form-control" name="trip-start">
+          </div>
+
+        </div>
+
+      </div>
+    </form>
+
+    <form action="contactosemergencia" class="mr-2 border bg-warning p-5 mt-5 mr-8 ml-8 ">
+      <div class="bd-content p-4">
+        <h2>Contactos de emergencia</h2>
+        <div class="row  bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="nombrecontactoemergencia" class="form-label">
+              Nombre Del Contacto de Emergencia
+            </label>
+            <input type="text" id="innombrecontactoemergencia" class="form-control" name="trip-start">
+          </div>
+        </div>
+          <div class="row bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+            <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+              <label for="numcelcontactoemergencia" class="form-label">
+                Ingresa Número de Celular del Contacto de Emergencia
+              </label>
+              <input type="text" id="innumcelcontactoemergencia" class="form-control" name="trip-start">
+            </div>
+            <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+              <label for="contactoemergencia" class="form-label">
+                Ingresa Número de Teléfono del Contacto de Emergencia
+              </label>
+              <input type="text" id="incontactoemergencia" class="form-control" name="trip-start">
+            </div>
+          </div>
+
+      </div>
+    </form>
+
+    <form action="nucleofamiliar" class="mr-2 border bg-warning p-5 mt-5 mr-8 ml-8 ">
+      <div class="bd-content p-4">
+        <h2>Nucleo familiar</h2>
+        <div class="row  bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="hijos" class="form-label">
+              Hijos
+            </label> 
+            <select id="sehijos" class="col-5 form" aria-label="Default select example">
+              <option selected>seleccione</option>
+              <option value="1">NO</option>
+              <option value="2">SI</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="lanumerodehijos" class="form-label">
+              Ingresa el Número de Hijos
+            </label>
+            <input type="number" id="innumerodehijos" class="form-control" name="trip-start">
+          </div>
+        </div>
+        <div class="row  bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="vivosolo" class="form-label">
+              Vivo solo/a
+            </label> 
+            <select id="sevivosolo" class="col-5 form" aria-label="Default select example">
+              <option selected>seleccione</option>
+              <option value="1">NO</option>
+              <option value="2">SI</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="conyuge" class="form-label">
+              Conyuge
+            </label> 
+            <select id="seconyuge" class="col-5 form" aria-label="Default select example">
+              <option selected>seleccione</option>
+              <option value="1">NO</option>
+              <option value="2">SI</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="padre" class="form-label">
+              Padre
+            </label> 
+            <select id="sepadre" class="col-5 form" aria-label="Default select example">
+              <option selected>seleccione</option>
+              <option value="1">NO</option>
+              <option value="2">SI</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="madre" class="form-label">
+              Madre.
+            </label> 
+            <select id="semadre" class="col-5 form" aria-label="Default select example">
+              <option selected>seleccione</option>
+              <option value="1">NO</option>
+              <option value="2">SI</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="abuelo" class="form-label">
+              Abuelo
+            </label> 
+            <select id="seabuelo" class="col-5 form" aria-label="Default select example">
+              <option selected>seleccione</option>
+              <option value="1">NO</option>
+              <option value="2">SI</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="abuela" class="form-label">
+              Abuela
+            </label> 
+            <select id="seabuela" class="col-5 form" aria-label="Default select example">
+              <option selected>seleccione</option>
+              <option value="1">NO</option>
+              <option value="2">SI</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="hermano" class="form-label">
+              Hermano(a)
+            </label> 
+            <select id="sehermano" class="col-5 form" aria-label="Default select example">
+              <option selected>seleccione</option>
+              <option value="1">NO</option>
+              <option value="2">SI</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="tio" class="form-label">
+              Tío
+            </label> 
+            <select id="setio" class="col-5 form" aria-label="Default select example">
+              <option selected>seleccione</option>
+              <option value="1">NO</option>
+              <option value="2">SI</option>
+            </select>
+          </div>
+        </div>
+        <div class="row  bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <label for="distinto" class="form-label">
+            <h6>¿Vives con alguien distinto a tus familares?</h6>
+          </label> 
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <select id="sedistinto" class="col-5 form" aria-label="Default select example">
+              <option selected>seleccione</option>
+              <option value="1">NO</option>
+              <option value="2">SI</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form action="mascota" class="mr-2 border bg-warning p-5 mt-2 mr-8 ml-8 ">
+      <div class="bd-content p-4">
+        <h2>¿Tienes mascotas?</h2>
+        <div class="row  bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="tio" class="form-label">
+              Tipo de mascota
+            </label> 
+            <select id="setio" class="col-2 form" aria-label="Default select example">
+              <option selected>seleccione</option>
+              <option value="1">No tengo mascota</option>
+              <option value="2">Perro</option>
+              <option value="3">Gato</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form action="informacionconyuge" class="mr-2 border bg-warning p-5 mt-2 mr-8 ml-8 ">
+      <div class="bd-content p-4">
+        <h4>Ingresa Conyuge</h4>
+        <div class="row  bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="nombreconyuge" class="form-label">
+              Nombres
+            </label>
+            <input type="text" id="innombreconyuge" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="apellidoconyuge" class="form-label">
+              Apellidos
+            </label>
+            <input type="text" id="inapellidoconyuge" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="generoconyuge" class="form-label"> Genero:
+            </label>
+            <select id="segeneroconyuge" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">Femenino</option>
+              <option value="2">Masculino</option>
+            </select>
+          </div>
+        </div>
+        <div class="row bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="tipodeidentificacion" class="form-label">
+              Tipo de identificación:
+            </label>
+            <select id="selecttipoide" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">CC</option>
+              <option value="2">CE</option>
+              <option value="3">NI</option>
+              <option value="4">NU</option>
+              <option value="5">OT</option>
+              <option value="6">PA</option>
+              <option value="7">RC</option>
+              <option value="3">TI</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="numerodeidentificacion" class="form-label">Número de identificación:
+            </label>
+            <input type="number" class="form-control" id="numerodeidentificacion" placeholder="" />
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="fechadenacimiento" class="form-label">Fecha de nacimiento:
+            </label>
+            <input type="date" id="infechadenacimiento" class="form-control" name="trip-start" value="2005-12-31"
+              min="1940-12-31" max="2005-12-31">
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form action="informacionpadre" class="mr-2 border bg-warning p-5 mt-2 mr-8 ml-8" >
+      <div class="bd-content p-4">
+        <h4>Ingresa Padre</h4>
+        <div class="row  bg-danger p-3 mt-1 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="nombrepadre" class="form-label">
+              Nombres
+            </label>
+            <input type="text" id="innombrepadre" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="apellidopadre" class="form-label">
+              Apellidos
+            </label>
+            <input type="text" id="inapellidopadre" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="generopadre" class="form-label"> Genero:
+            </label>
+            <select id="segeneropadre" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">Femenino</option>
+              <option value="2">Masculino</option>
+            </select>
+          </div>
+        </div>
+        <div class="row  bg-danger p-3 mt-1 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="tipodeidentificacionpadre" class="form-label">
+              Tipo de identificación:
+            </label>
+            <select id="selecttipoidepadre" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">CC</option>
+              <option value="2">CE</option>
+              <option value="3">NI</option>
+              <option value="4">NU</option>
+              <option value="5">OT</option>
+              <option value="6">PA</option>
+              <option value="7">RC</option>
+              <option value="3">TI</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="numerodeidentificacionpadre" class="form-label">Número de identificación:
+            </label>
+            <input type="number" class="form-control" id="innumerodeidentificacionpadre" placeholder="" />
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="fechadenacimientopadre" class="form-label">Fecha de nacimiento:
+            </label>
+            <input type="date" id="infechadenacimientopadre" class="form-control" name="trip-start" value="2005-12-31"
+              min="1940-12-31" max="2005-12-31">
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form action="informacionmadre" class="mr-2 border bg-warning p-5 mt-2 mr-8 ml-8 ">
+      <div class="bd-content p-4">
+        <h4>Ingresa Madre</h4>
+        <div class="row  bg-danger p-3 mt-1 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="nombremadre" class="form-label">
+              Nombres
+            </label>
+            <input type="text" id="innombremadre" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="apellidomadre" class="form-label">
+              Apellidos
+            </label>
+            <input type="text" id="inapellidomadre" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="generomadre" class="form-label"> Genero:
+            </label>
+            <select id="segeneromadre" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">Femenino</option>
+              <option value="2">Masculino</option>
+            </select>
+          </div>
+        </div>
+        <div class="row  bg-danger p-3 mt-1 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="tipodeidentificacionmadre" class="form-label">
+              Tipo de identificación:
+            </label>
+            <select id="selecttipoidemadre" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">CC</option>
+              <option value="2">CE</option>
+              <option value="3">NI</option>
+              <option value="4">NU</option>
+              <option value="5">OT</option>
+              <option value="6">PA</option>
+              <option value="7">RC</option>
+              <option value="3">TI</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="numerodeidentificacionmadre" class="form-label">Número de identificación:
+            </label>
+            <input type="number" class="form-control" id="numerodeidentificacionmadre" placeholder="" />
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="fechadenacimiento" class="form-label">Fecha de nacimiento:
+            </label>
+            <input type="date" id="infechadenacimientomadre" class="form-control" name="trip-start" value="2005-12-31"
+              min="1940-12-31" max="2005-12-31">
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form action="informacionabuelo" class="mr-2 border bg-warning p-5 mt-2 mr-8 ml-8 ">
+      <div class="bd-content p-4">
+        <h4>Ingresa Abuelo</h4>
+        <div class="row  bg-danger p-3 mt-1 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="nombreabuelo" class="form-label">
+              Nombres
+            </label>
+            <input type="text" id="innombreabuelo" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="apellidoabuelo" class="form-label">
+              Apellidos
+            </label>
+            <input type="text" id="inapellidoabuelo" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="generoabuelo" class="form-label"> Genero:
+            </label>
+            <select id="segeneroabuelo" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">Femenino</option>
+              <option value="2">Masculino</option>
+            </select>
+          </div>
+        </div>
+        <div class="row bg-danger p-3 mt-1 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="tipodeidentificacionabuelo" class="form-label">
+              Tipo de identificación:
+            </label>
+            <select id="selecttipoideabuelo" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">CC</option>
+              <option value="2">CE</option>
+              <option value="3">NI</option>
+              <option value="4">NU</option>
+              <option value="5">OT</option>
+              <option value="6">PA</option>
+              <option value="7">RC</option>
+              <option value="3">TI</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="numerodeidentificacionabuelo" class="form-label">Número de identificación:
+            </label>
+            <input type="number" class="form-control" id="numerodeidentificacionabuelo" placeholder="" />
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="fechadenacimientoabuelo" class="form-label">Fecha de nacimiento:
+            </label>
+            <input type="date" id="infechadenacimiento" class="form-control" name="trip-start" value="2005-12-31"
+              min="1940-12-31" max="2005-12-31">
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form action="informacionabuela" class="mr-2 border bg-warning p-5 mt-2 mr-8 ml-8 ">
+      <div class="bd-content p-2">
+        <h4>Ingresa Abuela</h4>
+        <div class="row  bg-danger p-3 mt-1 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="nombreabuela" class="form-label">
+              Nombres
+            </label>
+            <input type="text" id="innombreabuela" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="apellidoabuela" class="form-label">
+              Apellidos
+            </label>
+            <input type="text" id="inapellidoabuela" class="form-control" name="trip-start">
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="generoabuela" class="form-label"> Genero:
+            </label>
+            <select id="segeneroabuela" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">Femenino</option>
+              <option value="2">Masculino</option>
+            </select>
+          </div>
+        </div>
+        <div class="row  bg-danger p-3 mt-1 ml-60 mr-2">
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="tipodeidentificacionabuela" class="form-label">
+              Tipo de identificación:
+            </label>
+            <select id="selecttipoideabuela" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">CC</option>
+              <option value="2">CE</option>
+              <option value="3">NI</option>
+              <option value="4">NU</option>
+              <option value="5">OT</option>
+              <option value="6">PA</option>
+              <option value="7">RC</option>
+              <option value="3">TI</option>
+            </select>
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="numerodeidentificacionabuela" class="form-label">Número de identificación:
+            </label>
+            <input type="number" class="form-control" id="numerodeidentificacion" placeholder="" />
+          </div>
+          <div class="col bg-info p-3 mt-1 ml-60 mr-2">
+            <label for="fechadenacimientoabuela" class="form-label">Fecha de nacimiento:
+            </label>
+            <input type="date" id="infechadenacimiento" class="form-control" name="trip-start" value="2005-12-31"
+              min="1940-12-31" max="2005-12-31">
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form action="informacionhermano" class="mr-2 border bg-warning p-5 mt-5 mr-8 ml-8 ">
+      <div class="bd-content p-4">
+        <h4>Ingresa Hermano(a)</h4>
+        <div class="row bg-danger p-3 mt-1 ml-6 mr-2">
+          <div class="col">
+            <label for="nombrehermano" class="form-label">
+              Nombres
+            </label>
+            <input type="text" id="innombrehermano" class="form-control" name="trip-start">
+          </div>
+          <div class="col">
+            <label for="apellidohermano" class="form-label">
+              Apellidos
+            </label>
+            <input type="text" id="inapellidohermano" class="form-control" name="trip-start">
+          </div>
+          <div class="col">
+            <label for="generohermano" class="form-label"> Genero:
+            </label>
+            <select id="segenerohermano" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">Femenino</option>
+              <option value="2">Masculino</option>
+            </select>
+          </div>
+        </div>
+        <div class="row  bg-danger p-3 mt-1 ml-6 mr-2">
+          <div class="col">
+            <label for="tipodeidentificacion" class="form-label">
+              Tipo de identificación:
+            </label>
+            <select id="selecttipoide" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">CC</option>
+              <option value="2">CE</option>
+              <option value="3">NI</option>
+              <option value="4">NU</option>
+              <option value="5">OT</option>
+              <option value="6">PA</option>
+              <option value="7">RC</option>
+              <option value="3">TI</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="numerodeidentificacionhermano" class="form-label">Número de identificación:
+            </label>
+            <input type="number" class="form-control" id="numerodeidentificacionhermano" placeholder="" />
+          </div>
+          <div class="col">
+            <label for="fechadenacimientohermano" class="form-label">Fecha de nacimiento:
+            </label>
+            <input type="date" id="infechadenacimientohermano" class="form-control" name="trip-start" value="2005-12-31"
+              min="1940-12-31" max="2005-12-31">
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form action="informaciontio" class="mr-2 border bg-warning p-5 mt-5 mr-8 ml-8 ">
+      <div class="bd-content p-4">
+        <h4>Ingresa Tío(a)</h4>
+        <div class="row bg-danger p-3 mt-1 ml-60 mr-2">
+          <div class="col">
+            <label for="nombretio" class="form-label">
+              Nombres
+            </label>
+            <input type="text" id="innombretio" class="form-control" name="trip-start">
+          </div>
+          <div class="col">
+            <label for="apellidotio" class="form-label">
+              Apellidos
+            </label>
+            <input type="text" id="inapellidotio" class="form-control" name="trip-start">
+          </div>
+          <div class="col">
+            <label for="generotio" class="form-label"> Genero:
+            </label>
+            <select id="segenerotio" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">Femenino</option>
+              <option value="2">Masculino</option>
+            </select>
+          </div>
+        </div>
+        <div class="row bg-danger p-3 mt-1 ml-60 mr-2">
+          <div class="col">
+            <label for="tipodeidentificaciontio" class="form-label">
+              Tipo de identificación:
+            </label>
+            <select id="selecttipoidetio" class="form-control" aria-label="Default select example">
+              <option selected>Selecciona una opción</option>
+              <option value="1">CC</option>
+              <option value="2">CE</option>
+              <option value="3">NI</option>
+              <option value="4">NU</option>
+              <option value="5">OT</option>
+              <option value="6">PA</option>
+              <option value="7">RC</option>
+              <option value="3">TI</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="numerodeidentificaciontio" class="form-label">Número de identificación:
+            </label>
+            <input type="number" class="form-control" id="numerodeidentificaciontio" placeholder="" />
+          </div>
+          <div class="col">
+            <label for="fechadenacimientotio" class="form-label">Fecha de nacimiento:
+            </label>
+            <input type="date" id="infechadenacimientotio" class="form-control" name="trip-start" value="2005-12-31"
+              min="1940-12-31" max="2005-12-31">
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form action="infoacademica" class="mr-2 border bg-warning p-5 mt-5 mr-8 ml-8 ">
+      <div class="bd-content p-4">
+        <h2>Información académica</h2>
+        <div class="row bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <h4>Información Primaria</h4>
+          <div class="col">
+            <label for="titulopri" class="form-label"> Nombre instituto
+            </label>
+            <input type="text" id="intitulopri" class="form-control" name="trip-start">
+          </div>
+          <div class="col">
+            <label for="nombretitulopri" class="form-label"> Nombre título
+            </label>
+            <input type="text" id="innombretitulopri" class="form-control" name="trip-start">
+          </div>
+        </div>
+        <div class="row bg-danger p-3 mt-1 ml-60 mr-2">
+          <h4>Información Bachiller</h4>
+          <div class="col">
+            <label for="titulobac" class="form-label"> Nombre instituto
+            </label>
+            <input type="text" id="intitulobac" class="form-control" name="trip-start">
+          </div>
+          <div class="col">
+            <label for="nombretitulobac" class="form-label"> Nombre título
+            </label>
+            <input type="text" id="innombretitulobac" class="form-control" name="trip-start">
+          </div>
+        </div>
+        <div class="row bg-danger p-3 mt-1 ml-60 mr-2">
+          <h3>Debes diligenciar todos los títulos/niveles de educación superior que has tenido hasta el momento</h3>
+          <div class="col">
+            <label for="tecnico" class="form-label">
+              Técnico
+            </label> 
+            <select id="setecnico" class="col-5 form" aria-label="Default select example">
+              <option selected>seleccione</option>
+              <option value="1">NO</option>
+              <option value="2">SI</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="tecnologo" class="form-label">
+              Tecnólogo
+            </label> 
+            <select id="setecnologo" class="col-5 form" aria-label="Default select example">
+              <option selected>seleccione</option>
+              <option value="1">NO</option>
+              <option value="2">SI</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="universitario" class="form-label">
+              Universitario
+            </label> 
+            <select id="seuniversitario" class="col-5 form" aria-label="Default select example">
+              <option selected>seleccione</option>
+              <option value="1">NO</option>
+              <option value="2">SI</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="especializacion" class="form-label">
+              Especialización
+            </label> 
+            <select id="seespecializacion" class="col-5 form" aria-label="Default select example">
+              <option selected>seleccione</option>
+              <option value="1">NO</option>
+              <option value="2">SI</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="maestria" class="form-label">
+              Maestría
+            </label>
+            <select id="semaestria" class="col-5 form" aria-label="Default select example">
+              <option selected>seleccione</option>
+              <option value="1">NO</option>
+              <option value="2">SI</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="doctorado" class="form-label">
+              Doctorado
+            </label> 
+            <select id="sedoctorado" class="col-5 form" aria-label="Default select example">
+              <option selected>seleccione</option>
+              <option value="1">NO</option>
+              <option value="2">SI</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="cursos" class="form-label">
+              Cursos
+            </label> <br>
+            <select id="cursos" class="col-5 form" aria-label="Default select example">
+              <option selected>seleccione</option>
+              <option value="1">NO</option>
+              <option value="2">SI</option>
+            </select>
+          </div>
+
+        </div>
+        <div class="row bg-danger p-3 mt-1 ml-60 mr-2">
+          <div class="col">
+            <label for="certificado" class="form-label">Aquí puede adjuntar soportes como: certificados de estudio, certificados laborales y más.</label>
+            <input class="form-control form-control-sm" id="incertificado" type="file">
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    </form>
+
+    <form action="informaciontecnico" class="mr-2 border bg-warning p-5 mt-5 mr-8 ml-8 ">
+      <div class="bd-content p-4">
+        <div class="row bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <h4>Información Título Técnico</h4>
+          <div class="col">
+            <label for="titulotecnico" class="form-label"> Nombre instituto
+            </label>
+            <input type="text" id="intitulotecnico" class="form-control" name="trip-start">
+          </div>
+          <div class="col">
+            <label for="nombretitulotecnico" class="form-label"> Nombre título
+            </label>
+            <input type="text" id="innombretitulotecnico" class="form-control" name="trip-start">
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form action="informaciontecnologo" class="mr-2 border bg-warning p-5 mt-5 mr-8 ml-8 ">
+      <div class="bd-content p-4">
+        <div class="row bg-danger bg-info p-2 mt-1 ml-60 mr-2">
+          <h4>Información Título Tecnólogo</h4>
+          <div class="col">
+            <label for="titulotecnologo" class="form-label"> Nombre instituto
+            </label>
+            <input type="text" id="intitulotecnologo" class="form-control" name="trip-start">
+          </div>
+          <div class="col">
+            <label for="nombretitulotecnologo" class="form-label"> Nombre título
+            </label>
+            <input type="text" id="innombretitulotecnologo" class="form-control" name="trip-start">
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form action="informacionuniversidad" class="mr-2 border bg-warning p-5 mt-5 mr-8 ml-8 ">
+      <div class="bd-content p-4">
+        <div class="row bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <h4>Información Título Universitario</h4>
+          <div class="col">
+            <label for="titulouniversidad" class="form-label"> Nombre instituto
+            </label>
+            <input type="text" id="intitulouniversidad" class="form-control" name="trip-start">
+          </div>
+          <div class="col">
+            <label for="nombretitulouniversidad" class="form-label"> Nombre título
+            </label>
+            <input type="text" id="innombretitulouniversidad" class="form-control" name="trip-start">
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form action="informacionespecializacion" class="mr-2 border bg-warning p-5 mt-5 mr-8 ml-8 ">
+      <div class="bd-content p-4">
+        <div class="row bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <h4>Información Título Especialización</h4>
+          <div class="col">
+            <label for="titulopri" class="form-label"> Nombre instituto
+            </label>
+            <input type="text" id="intitulopri" class="form-control" name="trip-start">
+          </div>
+          <div class="col">
+            <label for="nombretitulopri" class="form-label"> Nombre título
+            </label>
+            <input type="text" id="innombretitulopri" class="form-control" name="trip-start">
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form action="informaciondoctorado" class="mr-2 border bg-warning p-5 mt-5 mr-8 ml-8 ">
+      <div class="bd-content p-4">
+        <div class="row bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <h4>Información Título Doctorado</h4>
+          <div class="col">
+            <label for="titulopri" class="form-label"> Nombre instituto
+            </label>
+            <input type="text" id="intitulopri" class="form-control" name="trip-start">
+          </div>
+          <div class="col">
+            <label for="nombretitulopri" class="form-label"> Nombre título
+            </label>
+            <input type="text" id="innombretitulopri" class="form-control" name="trip-start">
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form action="informacioncursos" class="mr-2 border bg-warning p-5 mt-5 mr-8 ml-8 ">
+      <div class="bd-content p-4">
+        <h4>Información Cursos</h4>
+        <div class="row bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col"> 
+            <h6>Información Curso 1</h6>
+            <label for="titulocurso1" class="form-label"> Nombre instituto
+            </label>
+            <input type="text" id="intitulocurso1" class="form-control" name="trip-start">
+          </div>
+          <div class="col">
+            <label for="nombretitulocurso1" class="form-label"> Nombre título
+            </label>
+            <input type="text" id="innombretitulocurso1" class="form-control" name="trip-start">
+          </div>
+        </div>
+        <div class="row bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col"> <br>
+            <h6>Información Curso 2</h6>
+            <label for="titulocurso2" class="form-label"> Nombre instituto
+            </label> <br>
+            <input type="text" id="intitulocurso2" class="form-control" name="trip-start">
+          </div>
+          <div class="col"><br><br>
+            <label for="nombretitulocurso2" class="form-label"> Nombre título
+            </label>
+            <input type="text" id="innombretitulocurso2" class="form-control" name="trip-start">
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form action="checkfinal" class="mr-2 border bg-warning p-5 mt-5 mr-8 ml-8 ">
+      <div class="bd-content p-4">
+        <div class="row bg-danger bg-info p-3 mt-1 ml-60 mr-2">
+          <div class="col-8">
+            <h5>Estamos por finalizar el registro de tu información, por favor
+              diligencia la autorización de manejo de información y datos, y da click en Guardar</h5>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Acepto
+                </label>
+              </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+  </main>
+
+  <footer></footer>
+
+  <script src="/script.js"></script>
+
+</body>
+
+</html>
